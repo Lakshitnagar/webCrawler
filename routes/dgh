@@ -1,0 +1,8 @@
+{
+	url: "http://google.com",
+	subanchors: [
+		{url: "abcd.com", subanchors: []},
+		{url: "abcd1.com", subanchors: []},
+		{url: "abcd2.com", subanchors: []}
+	]
+}
