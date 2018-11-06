@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var crawler = require('./routes/crawler');
 var jsonTree = require('./routes/jsonTree');
+var sample = require('./routes/sample');
 
 var mongoose = require('mongoose');
 var nodeModel = require('./database/nodeSchema');
@@ -47,6 +48,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/crawler', crawler);
 app.use('/jsonTree', jsonTree);
+app.use('/sample', sample);
 
 // app.get('/', function(){});
 

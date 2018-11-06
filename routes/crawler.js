@@ -28,9 +28,11 @@ router.get('/', function(req, res, next) {
 
 		            var childNodes = [];
 
-		            for (var j = 0; j < 12; j++) {
-		            	console.log(j+'-'+anchorLists[j].attribs.href);
-		            	var href = anchorLists[j].attribs.href;
+                    for (var j = 0; j < 12; j++) {
+                        var href = null;
+                        if (anchorLists[j])
+                            href = anchorLists[j].attribs.href;
+
 
 		            	if (href) {
 		            		if (href.substring(0,4)==="http") {
